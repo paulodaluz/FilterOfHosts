@@ -1,0 +1,32 @@
+{
+  "name": "filter-of-hosts",
+  "version": "1.0.0",
+  "description": "Script to search hosts and filter on multiple hosts files.",
+  "main": "index.js",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "glob-all": "^3.2.1",
+    "path": "^0.12.7",
+    "readline": "^1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulodaluz/filterOfHosts.git"
+  },
+  "keywords": [
+    "filter",
+    "hosts",
+    "find",
+    "ip"
+  ],
+  "author": "Paulo da Luz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulodaluz/filterOfHosts/issues"
+  },
+  "homepage": "https://github.com/paulodaluz/filterOfHosts#readme"
+}
