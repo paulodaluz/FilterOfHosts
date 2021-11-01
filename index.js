@@ -14,11 +14,10 @@ files.forEach(file => {
   const hosts = fs.readFileSync(file.path);
 
   hosts.toString().split('\n').map((line) => {
-    const host = line.slice(0, 16).replace(/[^.0-9]+/ig, "").split('..')[0];
+    const host = line.split(' ')[0].slice(0, 16).replace(/[^.0-9]+/ig, "");
     
     if(host && !listOfHosts.includes(host) && host.length > 7) {
-      listOfHosts = listOfHosts.concat(`${host}\n`)
-      console.log(host);
+      listOfHosts = listOfHosts.concat(`${host}\n`);
     }
   });
 });
