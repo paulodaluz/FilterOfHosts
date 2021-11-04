@@ -22,7 +22,7 @@ files.forEach(file => {
   });
 });
 
-fs.writeFile('allHosts.txt', listOfHosts, function (err) {
+fs.writeFile('allIpsFromHostFiles.txt', listOfHosts, function (err) {
   if (err) return console.log(err);
-  console.log('Hosts > allHosts.txt');
+  console.log('Hosts > allIpsFromHostFiles.txt');
 });
