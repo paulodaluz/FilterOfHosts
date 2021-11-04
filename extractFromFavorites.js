@@ -29,7 +29,7 @@ files.forEach((file) => {
 
                 const hasPort = /([0-9]{1,3}\.){3}[0-9]{1,3}:/.test(iP);
 
-                host = hasPort ? iP.substring(0, iP.indexOf(':')) : host = iP.substring(0, iP.indexOf('/'));
+                host = hasPort ? iP.substring(0, iP.indexOf(':')) : iP.substring(0, iP.indexOf('/'));
             }
 
             if (host && !listOfHosts.includes(host) && host.length > 7) {
