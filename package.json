@@ -4,9 +4,7 @@
   "description": "Script to search hosts and filter on multiple hosts files.",
   "main": "index.js",
   "dependencies": {
-    "fs": "0.0.1-security",
-    "glob-all": "3.2.1",
-    "path": "0.12.7"
+    "glob-all": "3.2.1"
   },
   "devDependencies": {},
   "scripts": {
